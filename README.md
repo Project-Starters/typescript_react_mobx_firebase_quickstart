@@ -1,4 +1,4 @@
-# RideshareApp
+# Typescript React Mobx Firebase Quickstart
 ## Goal
 to develop a rideshare app
 
