@@ -1,6 +1,10 @@
 # Typescript React Mobx Firebase Quickstart
 ## Goal
-to develop a rideshare app
+setup auth, storage, serverless functions in a matter of seconds.
+
+includes mobx, because it's awesome and SCSS because it's awesome.
+
+builds with webpack
 
 ## Install
 ### to install the needed dependencies 
