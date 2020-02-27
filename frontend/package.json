@@ -5,11 +5,9 @@
   "description": "Typescript React Mobx Firebase Quick Start",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
     "start": "webpack-dev-server --mode development --hot --progress --colors --port 3000 --open",
     "demo": "webpack-dev-server --mode development --config ./webpack.config.demo.js --hot --progress --colors --port 3001 --open",
     "build": "webpack -p --progress --colors",
-    "builddemo": "webpack -p --config ./webpack.config.demo.js --progress --colors",
     "prettier": "prettier --write \"src/**/*.{ts,tsx,css}\""
   },
   "license": "MIT",
