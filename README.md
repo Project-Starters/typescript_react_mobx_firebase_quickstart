@@ -32,3 +32,34 @@ firebase login
 ```
 firebase use {PROJECT_ID} 
 ```
+
+### firebase oncall function
+```js
+import { firebaseFunctions } from 'app/firebase/base';
+
+const testFunc = firebaseFunctions.httpsCallable("testFunc")
+testFunc({hello: "world"})
+```
+
+## Mobx
+
+### inject mobx into a class
+```js
+import * as React from 'react';
+import { GLOBAL_STATE } from 'app/constants';
+import { inject, observer } from 'mobx-react'
+
+
+@inject(GLOBAL_STATE)
+@observer
+export class Home extends React.Component{
+  render() {
+    return (
+      <div>
+      {this.props[GLOBAL_STATE].VALUEWITHINMOBXSTORE}
+      </div>
+    );
+  }
+}
+
+```

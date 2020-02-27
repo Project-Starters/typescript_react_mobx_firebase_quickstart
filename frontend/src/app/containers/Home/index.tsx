@@ -1,17 +1,19 @@
 import * as React from 'react';
 import * as style from './style.scss';
 import { firebaseFunctions } from 'app/firebase/base';
+import { GLOBAL_STATE } from 'app/constants';
+import { inject, observer } from 'mobx-react'
 
-
-export interface HomeProps{
+interface Props{
 }
-export interface HomeState {
+interface State {
 }
 
+@inject(GLOBAL_STATE)
+@observer
+export class Home extends React.Component<Props, State> {
 
-export class Home extends React.Component<HomeProps, HomeState> {
-
-  constructor(props: HomeProps, context: any) {
+  constructor(props: Props, context: any) {
     super(props, context);
 
     // const testFunc = firebaseFunctions.httpsCallable("testFunc")
