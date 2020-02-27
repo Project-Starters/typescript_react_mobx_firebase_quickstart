@@ -1,1 +1,14 @@
-F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F0/F00G11H21H22I32I31G41G41G41G41G41G41G41G41G41G41G41G41G41G41G41G41G41G41G41G41G41G41H21H22I31H20G10G11H22I31H20H01H21I11H21I1
+how to install
+```
+npm i
+```
+
+how to run locally (insure that no other app is using port 3000)
+```npm
+npm run start
+```
+
+how to build and deploy 
+```
+firebase deploy --only hosting
+```

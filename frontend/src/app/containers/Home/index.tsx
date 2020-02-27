@@ -14,7 +14,9 @@ export class Home extends React.Component<HomeProps, HomeState> {
   constructor(props: HomeProps, context: any) {
     super(props, context);
 
-    firebaseFunctions.httpsCallable("testFunc")({hello: "world"})
+    // const testFunc = firebaseFunctions.httpsCallable("testFunc")
+    // testFunc({hello: "world"})
+    
     this.state = {
     };
   }
