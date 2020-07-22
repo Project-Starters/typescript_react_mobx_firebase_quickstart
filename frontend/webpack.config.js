@@ -11,6 +11,7 @@ var outPath = path.join(__dirname, './build');
 // plugins
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
+const { BaseHrefWebpackPlugin } = require('base-href-webpack-plugin');
 
 module.exports = {
   context: sourcePath,
@@ -144,7 +145,8 @@ module.exports = {
         description: package.description,
         keywords: Array.isArray(package.keywords) ? package.keywords.join(',') : undefined
       }
-    })
+    }),
+    new BaseHrefWebpackPlugin({ baseHref: "/" }),
   ],
   devServer: {
     contentBase: sourcePath,

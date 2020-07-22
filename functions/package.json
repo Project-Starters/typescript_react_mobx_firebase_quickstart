@@ -10,7 +10,7 @@
     "test": "jest --config -- index.test.ts"
   },
   "engines": {
-    "node": "8"
+    "node": "10"
   },
   "main": "lib/index.js",
   "dependencies": {
